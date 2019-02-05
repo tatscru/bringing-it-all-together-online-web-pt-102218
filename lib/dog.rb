@@ -33,7 +33,7 @@ class Dog
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
     end 
     self 
-    #returning the instance dog 
+    #returning the instance dog class
   end
   
   def self.create
