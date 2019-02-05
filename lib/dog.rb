@@ -27,7 +27,7 @@ class Dog
     DB[:conn].execute(sql, self.name, self.breed)
     #need to include self because it is the first time this instance is being saved  
     
-    @id = 
+    @id = DB[:conn].execute(sql)
   end 
   
   def self.create
