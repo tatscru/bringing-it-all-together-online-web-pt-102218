@@ -22,7 +22,7 @@ class Dog
   def save
     if self.id 
       self.update 
-    else 
+    else SELECT * FROM dogs WHERE (name, )
   
   end 
   
