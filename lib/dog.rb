@@ -50,6 +50,7 @@ class Dog
     dog
     #returns an array representing a dog's data [a,b,c]
     #right after you create the "copy" you need to lock it in the database- rows
+    #extention of initialize, which is why you need the key/vals
   end 
   
   def self.find_or_create_by
