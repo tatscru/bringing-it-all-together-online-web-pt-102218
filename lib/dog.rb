@@ -48,9 +48,7 @@ class Dog
       WHERE id = ?
     SQL
    
-    result = DB[:conn].execute(sql, id).collect do |row|
-     self.new_from_db(row)
-    end.first
+    result = DB[:conn].execute(sql, id)[0]
   end 
   
   def self.find_or_create_by
