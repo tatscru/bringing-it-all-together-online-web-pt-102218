@@ -51,7 +51,7 @@ class Dog
     # result = DB[:conn].execute(sql, id)[0]
     # Dog.new(result[0], result[1], result[2])
     
-    DB[:conn].execute(sql, id) do |row|
+    DB[:conn].execute(sql, id).map do |row|
       self.new_from_db(row)
     end
   end 
