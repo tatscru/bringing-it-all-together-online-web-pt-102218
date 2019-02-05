@@ -51,7 +51,7 @@ class Dog
     # result = DB[:conn].execute(sql, id)[0]
     
     
-    row = DB[:conn].execute(sql, id)[0]
+    row = DB[:conn].execute(sql, id).first
       self.new(row[0], row[1], row[2])
   end 
   
