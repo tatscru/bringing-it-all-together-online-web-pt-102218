@@ -58,7 +58,7 @@ class Dog
       SELECT * FROM dogs
       WHERE id = ?
     SQL
-      row = DB[:conn].execute(sql, id).flatten
+      result = DB[:conn].execute(sql, id).flatten
       self.new_from_db(row)
   end 
   
