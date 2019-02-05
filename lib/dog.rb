@@ -43,7 +43,11 @@ class Dog
   end 
   
   def self.new_from_db
-    
+    dog = self.new( 
+     row[1],
+     row[2],
+     row[0])
+    dog
     #returns an array representing a dog's data
   end 
   
