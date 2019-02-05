@@ -19,17 +19,7 @@ class Dog
     DB[:conn].execute(sql)
   end 
   
-  def self.drop_table 
-    sql =  <<-SQL 
-      DROP TABLE dogs
-    SQL
-    
-    DB[:conn].execute(sql) 
-    
-      # DB[:conn].execute(DROP TABLE dogs)
-    #here you do not have to include the SQL portion 
-  end 
-  
+ 
   def save
   end 
   
@@ -50,4 +40,16 @@ class Dog
   
   def update 
   end 
+  
+  def self.drop_table 
+    sql =  <<-SQL 
+      DROP TABLE dogs
+    SQL
+    
+    DB[:conn].execute(sql) 
+    
+      # DB[:conn].execute(DROP TABLE dogs)
+    #here you do not have to include the SQL portion 
+  end 
+  
 end 
