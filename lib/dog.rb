@@ -23,6 +23,6 @@ class Dog
     
   end 
   
-  def 
+  def save
   end 
 end 
