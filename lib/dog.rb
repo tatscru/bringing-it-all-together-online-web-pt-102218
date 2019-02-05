@@ -46,7 +46,6 @@ class Dog
     sql = <<-SQL
       SELECT * FROM dogs 
       WHERE id = ?
-      LIMIT 1
     SQL
    
     row = DB[:conn].execute(sql, id).collect do |row|
