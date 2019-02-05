@@ -48,7 +48,7 @@ class Dog
      row[2],
      row[0])
     dog
-    #returns an array representing a dog's data
+    #returns an array representing a dog's data [a,b,c]
   end 
   
   def self.find_or_create_by
