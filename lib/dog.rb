@@ -21,9 +21,7 @@ class Dog
  
   def save
     sql = <<-SQL 
-      if self.id 
-      self.update 
-    else SELECT * FROM dogs WHERE (name, )
+     
     SQL
     
     
@@ -45,6 +43,9 @@ class Dog
   end 
   
   def update 
+    # if self.id 
+    #   self.update 
+    # else SELECT * FROM dogs WHERE (name, )
   end 
   
   def self.drop_table 
