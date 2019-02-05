@@ -57,7 +57,6 @@ class Dog
     sql = <<-SQL
       SELECT * FROM dogs
       WHERE id = ?
-      LIMIT 1
     SQL
       row = DB[:conn].execute(sql, id).flatten
       self.new_from_db(row)
