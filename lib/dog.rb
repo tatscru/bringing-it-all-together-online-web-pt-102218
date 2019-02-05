@@ -50,7 +50,7 @@ class Dog
     SQL
    
    DB[:conn]execute(sql, id) do |row|
-     
+     self.new_from_db
    
   end 
   
