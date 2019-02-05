@@ -31,7 +31,8 @@ class Dog
     #need to include self because it is the first time this instance is being saved  
     
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
-  end 
+    end 
+  end
   
   def self.create
   end 
