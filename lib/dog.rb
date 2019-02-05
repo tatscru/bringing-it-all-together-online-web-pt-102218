@@ -48,6 +48,7 @@ class Dog
       WHERE id = ?
       LIMIT 1
     SQL
+    self 
   end 
   
   def self.find_or_create_by
