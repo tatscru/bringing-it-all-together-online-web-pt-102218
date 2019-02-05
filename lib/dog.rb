@@ -75,11 +75,7 @@ class Dog
     # if self.id 
     #   self.update 
     # else SELECT * FROM dogs WHERE (name, )
-  end 
-  
-  
-   
-  end 
+  end
   
   def self.drop_table 
     sql =  <<-SQL 
