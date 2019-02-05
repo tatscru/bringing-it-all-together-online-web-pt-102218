@@ -44,9 +44,9 @@ class Dog
   
   def self.new_from_db(row)
     dog = self.new( 
-     row[1],
-     row[2],
-     row[0])
+     name:row[1],
+     breed:row[2],
+     id:row[0])
     dog
     #returns an array representing a dog's data [a,b,c]
     #right after you create the "copy" you need to lock it in the database- rows
