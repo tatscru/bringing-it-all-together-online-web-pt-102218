@@ -44,6 +44,7 @@ class Dog
   
   def self.new_from_db
     
+    #returns an array representing a dog's data
   end 
   
   def self.find_or_create_by
