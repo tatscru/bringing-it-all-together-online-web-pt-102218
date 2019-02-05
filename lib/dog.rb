@@ -62,6 +62,7 @@ class Dog
     # SQL
     #   row = DB[:conn].execute(sql, id).flatten
     #   self.new_from_db(row)
+  end 
   
   def self.find_or_create_by
   end 
