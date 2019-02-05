@@ -43,7 +43,11 @@ class Dog
   end 
   
   def self.find_by_id(id)
-    
+    sql = <<-SQL
+      SELECT * FROM students 
+      WHERE name = ?
+      LIMIT 1
+    SQL
   end 
   
   def self.find_or_create_by
