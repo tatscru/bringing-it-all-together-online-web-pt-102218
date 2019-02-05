@@ -53,6 +53,16 @@ class Dog
     #extention of initialize, which is why you need the key/vals
   end 
   
+  def self.find_by_id(id)
+    # sql = <<-SQL
+    #   SELECT *
+    #   FROM dogs
+    #   WHERE id = ?
+    #   LIMIT 1
+    # SQL
+    #   row = DB[:conn].execute(sql, id).flatten
+    #   self.new_from_db(row)
+  
   def self.find_or_create_by
   end 
   
@@ -67,15 +77,7 @@ class Dog
     # else SELECT * FROM dogs WHERE (name, )
   end 
   
-   def self.find_by_id(id)
-    # sql = <<-SQL
-    #   SELECT *
-    #   FROM dogs
-    #   WHERE id = ?
-    #   LIMIT 1
-    # SQL
-    #   row = DB[:conn].execute(sql, id).flatten
-    #   self.new_from_db(row)
+  
    
   end 
   
