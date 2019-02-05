@@ -1,5 +1,5 @@
 def Dog 
-  attr_accessor :dog, :breed
-  def initialize()
+  attr_accessor :name, :breed
+  def initialize(name, breed)
   end 
 end 
