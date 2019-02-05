@@ -49,6 +49,7 @@ class Dog
      row[0])
     dog
     #returns an array representing a dog's data [a,b,c]
+    #right after you create the "copy" you need to lock it in the database- rows
   end 
   
   def self.find_or_create_by
