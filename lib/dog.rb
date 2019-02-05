@@ -51,8 +51,8 @@ class Dog
     # result = DB[:conn].execute(sql, id)[0]
     
     
-    result = DB[:conn].execute(sql, id)[0]
-      self.new(result[0])
+    row = DB[:conn].execute(sql, id)[0]
+      self.new(row)
   end 
   
   def self.find_or_create_by
