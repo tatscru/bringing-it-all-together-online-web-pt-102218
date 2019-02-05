@@ -28,7 +28,6 @@ class Dog
     
       # DB[:conn].execute(DROP TABLE dogs)
     #here you do not have to include the SQL portion 
-    
   end 
   
   def save
