@@ -36,7 +36,7 @@ class Dog
     #returning the instance dog class
   end
   
-  def self.create
+  def self.create(name, breed)
     dog = Dog.new(name, breed)
     dog.save 
     dog 
