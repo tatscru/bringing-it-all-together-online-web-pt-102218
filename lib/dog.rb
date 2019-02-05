@@ -25,7 +25,7 @@ class Dog
     SQL
     
     DB[:conn].execute(sql, self.name, self.breed)
-    #need to include self because it is the first time being saved. 
+    #need to include self because it is the first time this instance is being saved  
     
   end 
   
