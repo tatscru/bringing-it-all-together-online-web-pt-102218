@@ -27,7 +27,7 @@ class Dog
     DB[:conn].execute(sql, self.name, self.breed)
     #need to include self because it is the first time this instance is being saved  
     
-    @id = DB[:conn].execute(sql)
+    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
   end 
   
   def self.create
