@@ -24,7 +24,8 @@ class Dog
      INSERT INTO dogs (name, breed) VALUES (?,?)
     SQL
     
-    DB[:conn].execute(sql, name, breed)
+    DB[:conn].execute(sql, self.name, self.breed)
+    #need to include self because it is the first time being saved. 
     
   end 
   
