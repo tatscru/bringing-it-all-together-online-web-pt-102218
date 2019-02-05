@@ -90,6 +90,9 @@ class Dog
     if self.id 
       self.update 
     else SELECT * FROM dogs WHERE (name, )
+      
+      sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
+      DB[:conn].execute(sql, self.name, self.grade, self.id)
   end
   
   def self.drop_table 
