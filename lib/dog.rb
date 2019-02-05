@@ -82,7 +82,7 @@ class Dog
     SQL
     
     DB[:conn].execute(sql, name).collect do |row|
-      self.
+      self.new_from_db(row)
     
   end 
   
