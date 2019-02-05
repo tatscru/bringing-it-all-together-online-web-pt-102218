@@ -20,10 +20,13 @@ class Dog
   end 
  
   def save
-    if self.id 
+    sql = <<-SQL 
+      if self.id 
       self.update 
     else SELECT * FROM dogs WHERE (name, )
-  
+    SQL
+    
+    
   end 
   
   def self.create
