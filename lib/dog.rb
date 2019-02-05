@@ -63,7 +63,7 @@ class Dog
   end 
   
   def self.find_or_create_by
-    dog = DB[:conn]
+    dog = DB[:conn].execute(SELECT)
   end 
   
  
