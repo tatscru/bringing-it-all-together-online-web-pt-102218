@@ -48,7 +48,9 @@ class Dog
       WHERE id = ?
       LIMIT 1
     SQL
-    self 
+   
+   DB[:conn]execute(sql, id)
+   
   end 
   
   def self.find_or_create_by
